@@ -1,5 +1,5 @@
 # Microsoft SQL Server Trace Flags
-Detailed list of all discovered (documented and undocumented) Microsoft SQL Server trace flags (**620** trace flags).
+Detailed list of all discovered (documented and undocumented) Microsoft SQL Server trace flags (**622** trace flags).
 
 ⚠ **REMEMBER: Be extremely careful with trace flags, test in your development environment first.
 And consult professionals first if you are the slightest uncertain about the effects of your changes.**
@@ -289,7 +289,7 @@ Use this trace flag if SQL Server is experiencing high number of [QDS_LOADDB](ht
 
 <a id="trace-flags-list"></a>
 ## Trace Flags List
-Summary: **620 trace flags**
+Summary: **622 trace flags**
 
 
 <a id="-1"></a>
@@ -3464,7 +3464,25 @@ Link: https://support.microsoft.com/kb/4517771<br />
 Scope: global only<br />
 SQL Server Version: >= 2019 CU1, >= 2017 CU18, >= 2016 SP1 CU10
 
+ 
+<a id="6950"></a>
+#### Trace Flag: 6950
+**Undocumented trace flag**<br />
+Function: Disable SQL Server 2022's TempDB contention improvements around GAM/SGAM access.<br />
+Link: [Github disable gamsgam]<br />
+Scope: global only<br />
+SQL Server Version: >= 2022
 
+ 
+<a id="6962"></a>
+#### Trace Flag: 6962
+**Undocumented trace flag**<br />
+Function: Disable SQL Server 2022's TempDB contention improvements around GAM/SGAM access.<br />
+Link: [Github disable gamsgam]<br />
+Scope: global only<br />
+SQL Server Version: >= 2022
+
+ 
 <a id="7103"></a>
 #### Trace Flag: 7103
 **Undocumented trace flag**<br />
@@ -5576,7 +5594,7 @@ SQL Server Version: >= 2019 CU9, >= 2017 CU21
 [Yet another X-Ray for the QP]:http://www.queryprocessor.com/tf_8628/
 [How It Works: SQL Server 2012 Database Engine Task Scheduling]:https://blogs.msdn.microsoft.com/psssql/2013/08/13/how-it-works-sql-server-2012-database-engine-task-scheduling/
 [What You Need to Know about the Batch Mode Window Aggregate Operator in SQL Server 2016: Part 1]:http://sqlmag.com/sql-server/what-you-need-know-about-batch-mode-window-aggregate-operator-sql-server-2016-part-1
-[SQL Server 2016 : Getting tempdb a little more right]:https://blogs.sentryone.com/aaronbertrand/sql-server-2016-tempdb-fixes/
+[SQL Server 2016 : Getting tempdb a little more right]:https://www.sentryone.com/blog/aaronbertrand/sql-server-2016-tempdb-fixes
 [Importance of Performing DBCC CHECKDB on all SQL Server Databases]:https://www.mssqltips.com/sqlservertip/4581/importance-of-performing-dbcc-checkdb-on-all-sql-server-databases/
 [SQL Server Parallel Query Placement Decision Logic]:https://blogs.msdn.microsoft.com/psssql/2016/03/04/sql-server-parallel-query-placement-decision-logic/
 [compatibility level]:https://docs.microsoft.com/sql/t-sql/statements/alter-database-transact-sql-compatibility-level
@@ -5631,3 +5649,4 @@ SQL Server Version: >= 2019 CU9, >= 2017 CU21
 [Minimizing the impact of DBCC CHECKDB]:https://sqlperformance.com/2012/11/io-subsystem/minimize-impact-of-checkdb
 [KB2634571]:https://web.archive.org/web/20150303213855/http://support.microsoft.com/kb/2634571
 [KB4565944]:https://support.microsoft.com/kb/4565944
+[Github disable gamsgam]:https://github.com/microsoft/bobsql/blob/master/demos/sqlserver2022/tempdb/disablegamsgam.cmd
