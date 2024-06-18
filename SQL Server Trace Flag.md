@@ -82,6 +82,7 @@ Source links:
 - Aaron Bertrand ([b](https://sqlperformance.com/author/abertrand) | [t](https://twitter.com/AaronBertrand))
 - Wilfred van Dijk
 - Tracy Boggiano ([b](http://databasesuperhero.com) | [t](https://twitter.com/TracyBoggiano))
+- Danilo Zocco (https://github.com/CrazySwimmer)
 
 
 <a id="what-are-microsoft-sql-server-trace-flags"></a>
@@ -3988,10 +3989,10 @@ Link: https://blogs.msdn.microsoft.com/sqlreleaseservices/sql-server-2012-servic
 Link: [Hidden Performance & Manageability Improvements in SQL Server 2012 / 2014]<br />
 Link: [KB2964518]<br />
 Scope: global only
-
-
-<a id="8099"></a>
-#### Trace Flag: 8099
+ 
+ 
+ <a id="8101"></a>
+#### Trace Flag: 8101
 Function: Enables a spinlock contention fix for high-end systems running SQL Server 2019 (15.x) serving many concurrent users.<br />
 Note: This trace flag applies to SQL Server 2019 (15.x) CU2 and higher builds.<br />
 Link: https://support.microsoft.com/kb/4538688<br />
@@ -4786,6 +4787,15 @@ Link: [New Undocumented Trace Flags]<br />
 Scope: ?
 
 
+<a id="9265"></a>
+#### Trace Flag: 9265
+**Undocumented trace flag**<br />
+Function: MS engineering team has decided to generate a DUMP from SQL 2019+ every time a “PLAN cannot be generated”. Once a Dump freezes connections during the generation, the cluster will probably lost the connectivity to the cluster and the AG can be down/failover if it has automatic failover configured. The mitigation for this issue (avoid DUMP generation) is to enable TF Trace Flag 9265 on Startup.
+Once TF 9265 is enabled, SQL Server stops generating DUMP on the “PLAN cannot be generated” error but only writes a message to ERRORLOG file (Internal Query Processor Error: The query processor could not produce a query plan. For more information, contact Customer Support Services).
+<br />
+Link: None
+
+
 <a id="9268"></a>
 #### Trace Flag: 9268
 Function: SQL 8 - When SQL Server runs a parameterized query that contains several IN clauses, each with a large number of values, SQL Server may return the following error message after a minute or more of high CPU utilization: KB 325658. Server: Msg 8623, Level 16, State 1. Internal Query Processor Error: The query processor could not produce a query plan. Contact your primary support provider for more information.<br />
@@ -5562,6 +5572,14 @@ Link: [KB4565944]<br />
 Link: https://aboutsqlserver.com/2019/06/09/hadr-sync-commit/<br />
 Scope: global or session<br />
 SQL Server Version: >= 2019 CU9, >= 2017 CU21
+
+
+<a id="12606"></a>
+#### Trace Flag: 12606
+Function: Enables Query Store for secondary replicas.<br />
+Link: https://learn.microsoft.com/en-us/sql/relational-databases/performance/query-store-for-secondary-replicas?view=sql-server-ver16<br />
+Scope: global<br />
+SQL Server Version: >= 2022
 
 
 [Docs Trace Flags]:https://docs.microsoft.com/sql/t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql

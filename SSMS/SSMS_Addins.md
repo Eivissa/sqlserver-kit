@@ -1,9 +1,10 @@
 # SQL Server Management Studio add-ins
-Complete list of useful and must have add-ins for SQL Server Management Studio - **36** SSMS add-ins
+Complete list of useful and must have add-ins for SQL Server Management Studio - **38** SSMS add-ins
 
 | Name                                                  | Download page                 | Release Date | Support SSMS Version | Developer            | Free version | Price |
 |-------------------------------------------------------|-------------------------------|--------------|:---------------------|----------------------|--------------|------:|
 | [SSMSBoost](#ssmsboost)                               | [SSMSBoost]                   | 2019-08-19   | 2008-2018            | Solutions Crew GmbH  | Yes          |  $150 |
+| [SQL Refactor Studio](#sql-refactor-studio)        | [SQL Refactor Studio] | 2013-09-01   | 2013-2016      | SQL Refactor Studio Team             | Yes          |    $17-25 |
 | [SqlSmash](#sqlsmash)                                 | [SqlSmash]                    | 2017-06-10   | 2008-2017            | Smashing Jedis LLC   | Yes          |   $99 |
 | [SQL Search](#sql-search)                             | [SQL Search]                  | 2017-02-27   | 2008-2017            | Red Gate             | Yes          | No    |
 | [Red Gate SQL Test](#red-gate-sql-test)               | [Red Gate SQL Test]           | 2017-03-21   | 2008-2017            | Red Gate             | No           |  $369 |
@@ -34,12 +35,14 @@ Complete list of useful and must have add-ins for SQL Server Management Studio -
 | [Tabs Studio](#tabs-studio)                           | [Tabs Studio]                 | 2017-08-24   | 2012-2017            | Vlasov Studio        | No           |   $49 |
 | [Workload Addin](#workload-addin)                     | [Workload Addin]              | 2017-02-07   | 2008-2012            | Tomáš Bauer          | Yes          | No    |
 | [SQL Server Diagnostics](#sql-server-diagnostics)     | [SQL Server Diagnostics]      | 2017-06-22   | 2016-2017            | Microsoft            | Yes          | No    |
-| [VersionSQL](#versionsql)                             | [VersionSQL]                  | 2017-02-16   | 2012-2017            | VersionSQL           | Yes          |  $149 |
+| [VersionSQL](#versionsql)                             | [VersionSQL]                  | 2017-02-16   | 2012-2017            | Wrism Innovations    | Yes          |  $199 |
 | [Spotlight Tuning Pack](#spotlight-tuning-pack)       | [Spotlight Tuning Pack]       | 2018-06-01   | 2012-2017            | Quest Software Inc   | Yes          |  $180 |
 | [Michel Max - SSMS Tools](#michel-max)                | [Michel Max - SSMS Tools]     | 2018-11-16   | 2012-2018            | Michel Max           | Yes          | No    |
 | [SSMS Schema Folders](#ssms-schema-folders)           | [SSMS Schema Folders]         | 2018-10-06   | 2012-2018            | Nicholas Ross        | Yes          | No    |
 | [Statistics Reporter](#statistics-reporter)           | [Statistics Reporter]         | 2019-04-17   | 2014-2018            | Analytics Bar        | Yes          | No    |
 | [SSMS Lizard](#ssms-lizard)                           | [SSMS Lizard]                 | 2020-06-15   | 2018-2018            | Lizard Labs Software | Yes          | No    |
+| [SSMS Object Explorer Menu](#ssms-menu)               | [SSMS Object Explorer Menu]   | 2023-07-10   | 2018-2022            | Daniel Brink         | Yes          | No    |
+| [SQL Shades dark mode](#sql-shades)                   | [SQL Shades]                  | 2022-08-03   | 2018-2022            | Wrism Innovations    | Yes          | No    |
 
 
 <a id="ssmsboost"></a>
@@ -68,6 +71,39 @@ SSMSBoost add-in adds missing features and improves your productivity when worki
 Licensing options: after 30 day trial period register and get free community license or buy the professional version.
 
 [Features list / SSMSBoost version comparison](http://www.ssmsboost.com/VersionCompare)
+
+
+<a id="sql-refactor-studio"></a>
+## SQL Refactor Studio
+Download page: [SQL Refactor Studio]<br/>
+Release date: 2013-09-01<br/>
+Support Version: 2013-2016<br/>
+Developer: SQL Refactor Studio Team<br/>
+Free version: Yes<br/>
+Price: $17-25
+
+SQL Refactor Studio is a SQL Server Management Studio addin. It contains a lot of useful tools that help SQL Server developers to perform their daily routines.
+
+Key features of SQL Refactor Studio:
+- Group Databases and Database Objects
+- SQL Query History
+- Generate C# classes
+- Refactoring «Rename»
+- View Dependencies
+- Find Code
+- Displaying calculations on the SSMS status bar
+- Refactoring «Add CRUD Methods»
+- Refactoring «Introduce Trigger for History»
+- Refactoring «Add Lookup Table»
+- Refactoring «Move Columns»
+- Find Data
+- Generate Select Statement
+- Script Table Data
+- Change collation of table columns
+- Highlight all occurrences of selected word
+- Scripting an object as ALTER
+- Get row count
+- Get Top(N) rows
 
 
 <a id="sqlsmash"></a>
@@ -656,7 +692,31 @@ SSMS Lizard extends SQL Server Management Studio with a number of new features n
 - Quickly attach the query results to an e-mail, FTP or even Google Drive with a single click of a button; and more.
 
 
+<a id="ssms-menu"></a>
+## SSMS Object Explorer Menu
+Download page: [SSMS Object Explorer Menu]<br/>
+Release date: 2023-07-10<br/>
+Support Version: 2018-2023<br/>
+Developer: Daniel Brink<br/>
+Free version: Yes<br/>
+Price: No
+
+SSMS extension for adding custom menu items to the Object Explorer's right-click context menu.
+
+<a id="sql-shades"></a>
+## SQL Shades
+Download page: [SQL Shades]<br/>
+Release date: 2022-08-03<br/>
+Support Version: 18+<br/>
+Developer: Wrism Innovations<br/>
+Free version: Yes<br/>
+Price: No
+
+Adds a true dark theme to SSMS.
+
+
 [SSMSBoost]:http://www.ssmsboost.com/
+[SQL Refactor Studio]: https://sqlrefactorstudio.com/
 [SqlSmash]:http://www.sqlsmash.com/
 [Red Gate SQL Code Guard]:https://www.red-gate.com/products/sql-development/sql-code-guard/
 [SQL Search]:http://www.red-gate.com/products/sql-development/sql-search/
@@ -694,8 +754,10 @@ SSMS Lizard extends SQL Server Management Studio with a number of new features n
 [Michel Max - SSMS Tools]:https://sourceforge.net/projects/michelmaxssmstools2017/
 [SSMS Schema Folders]:https://github.com/nicholas-ross/SSMS-Schema-Folders
 [Statistics Reporter]:https://analyticsbar.com/blog/statistics-reporter-ssms-extension/
+[SSMS Object Explorer Menu]:https://github.com/brink-daniel/ssms-object-explorer-menu
 
 [SQL_Search Download]:https://download.red-gate.com/SQL_Search.exe
 [Apex SQL Search Download]:https://www.apexsql.com/zips/ApexSQLSearch.exe
 [DbForge Search Download]:https://www.devart.com/dbforge/sql/search/searchsql22std.exe
 [SSMS Lizard]:https://www.lizard-labs.com/sql_server_management_studio_ssms_extesnsion_lizard.aspx
+[SQL Shades]:https://www.sqlshades.com/
